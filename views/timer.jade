@@ -1,0 +1,33 @@
+html
+  head
+    title Cozinhando!
+    script(src="/javascripts/timer.js")
+    link(rel="stylesheet", href="/stylesheets/style.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css")
+
+  body
+    .center-container
+      h1 Cozinhando!
+      p#mensagem O tempo selecionado foi: #{time} minuto(s)
+      
+      img.home-page-image#current-egg-state(src="/images/raw-egg.png", alt="Estado do ovo")
+
+
+      .timer-wrapper
+        h2#timer-display 00:00
+        .progress-bar-container
+          .progress-bar#progress
+      
+        .controls
+          button#start.btn.primary
+            i.fas.fa-play
+            |  Começar
+          button#pause.btn.warning(style="display:none")
+            i.fas.fa-pause
+            |  Pausar
+          button#resume.btn.primary(style="display:none")
+            i.fas.fa-play
+            |  Continuar
+          button#reset.btn.danger(style="display:none")
+            i.fas.fa-undo
+            |  Resetar

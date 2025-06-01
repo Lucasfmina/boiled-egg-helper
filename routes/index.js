@@ -7,15 +7,15 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/mole', function (req, res) {
-  res.render('timer', { 'time': 1 });
+  res.render('timer');
 });
 
 router.get('/ao-ponto', function (req, res) {
-  res.render('timer', { 'time': 2 });
+  res.render('timer');
 });
 
 router.get('/dura', function (req, res) {
-  res.render('timer', { 'time': 3 });
+  res.render('timer');
 });
 
 

@@ -42,3 +42,38 @@ h1 {
   color: #f9ba38;
 
 }
+
+/* Estilos mínimos para o timer */
+#timer-display {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: 'Fredoka', monospace;
+  color: #f9ba38;
+  margin: 20px 0;
+}
+
+p {
+  font-family: 'Fredoka', monospace;
+  font-weight: bold;
+}
+
+
+.progress-bar-container {
+  width: 100%;
+  height: 10px;
+  background-color: #ffe7b3;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 100%;
+  background-color: #fdc949;
+  transition: width 1s linear;
+}
+
+.controls {
+  margin: 20px 0;
+}
