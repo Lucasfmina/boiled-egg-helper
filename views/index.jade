@@ -1,5 +1,17 @@
-extends layout
+html
+  head
+    title Cozinhovo
+    link(rel="stylesheet", href="/stylesheets/style.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap")
 
-block content
-  h1= title
-  p Welcome to #{title}
+  body
+    .center-container
+      img.home-page-image(src="/images/eggs-togheter.png", alt="Ovos felizes juntos!")
+      .botoes
+            h1.header Qual vai ser o de hoje?
+      Button 
+        a(href="/mole") Gema escorrendo, por favor!
+      Button          
+        a(href="/ao-ponto") Equilíbrio é sempre bom!
+      Button
+        a(href="/dura") Dura igual pedra!
