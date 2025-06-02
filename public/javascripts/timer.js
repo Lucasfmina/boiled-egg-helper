@@ -64,10 +64,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (tempoCorrido >= (EggTime['HARD_BOILED'] * 60) - tempoTransisao) {
             mensagem.textContent = EggStateToMessage['HARD_BOILED'];
             imagem.src = EggTypeToImagePath['HARD_BOILED'];
-        } else if (tempoCorrido > (EggTime['MEDIUM_BOILED'] * 60) - tempoTransisao) {
+        } else if (tempoCorrido >= (EggTime['MEDIUM_BOILED'] * 60) - tempoTransisao) {
             mensagem.textContent = EggStateToMessage['MEDIUM_BOILED'];
             imagem.src = EggTypeToImagePath['MEDIUM_BOILED'];
-        } else if (tempoCorrido > (EggTime['SOFT_BOILED'] * 60) - tempoTransisao) {
+        } else if (tempoCorrido >= (EggTime['SOFT_BOILED'] * 60) - tempoTransisao) {
             mensagem.textContent = EggStateToMessage['SOFT_BOILED'];
             imagem.src = EggTypeToImagePath['SOFT_BOILED'];
         } else {
